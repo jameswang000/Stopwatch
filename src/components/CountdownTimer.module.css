@@ -1,0 +1,90 @@
+body { 
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 50px;
+  background-color: lightgray;
+}
+
+.display {
+  font-family: monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(99, 152, 99, 0.8);
+  border: 2px solid black;
+  border-radius: 40px;
+}
+
+.controls > button , .set {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  margin: 5px;
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  transition: background-color 4s ease;
+  transition: transform 1s ease;
+}
+
+.set {
+  font-size: 2rem;
+  background-color: purple;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(0.98)
+}
+
+.start {
+  background-color: green;
+}
+
+
+.stop {
+  background-color: red;
+}
+
+.reset {
+  background-color: rgba(11, 194, 255, 0.618);
+}
+
+.setTimeControls {
+  display: flex;
+
+}
+
+.setTimeControls > input {
+  max-width: 40px;
+  margin: 2px;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: monospace;
+  
+  border: 1px solid black;
+  border-radius: 5px;
+
+
+}
